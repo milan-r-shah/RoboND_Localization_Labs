@@ -8,10 +8,10 @@ double new_mean, new_var;
 
 tuple<double, double> measurement_update(double mean1, double var1, double mean2, double var2)
 {
-    // new_mean = //TODO: Code the measurment update mean function mu;
+    // the measurment update mean function mu;
     new_mean = (var2 * mean1 + var1 * mean2) / (var2 + var1);
 
-    // new_var =  //TODO: Code the measurment update variance function sigma square;
+    // the measurment update variance function sigma square;
     new_var = 1 / (1 / var2 + 1 / var1);
 
     return make_tuple(new_mean, new_var);
@@ -19,7 +19,6 @@ tuple<double, double> measurement_update(double mean1, double var1, double mean2
 
 int main()
 {
-
     tie(new_mean, new_var) = measurement_update(10, 8, 13, 2);
     printf("[%f, %f]", new_mean, new_var);
     return 0;
