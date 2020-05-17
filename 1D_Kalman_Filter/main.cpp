@@ -34,14 +34,17 @@ int main()
     double mu = 0;
     double sig = 1000;
     
-    //######TODO: Put your code here below this line######//
-    
     // Loop through all the measurments
-        // Apply a measurment update
+    for(int i = 0; i < sizeof(measurements)/sizeof(measurements[0]); ++i)
+    {
+        // measurment update
+        tie(mu, sig) = measurement_update(mu, sig, measurements[i], measurement_sig);
         printf("update:  [%f, %f]\n", mu, sig);
-        // Apply a state prediction
+
+        // state prediction
+        tie(mu, sig) = state_prediction(mu, sig, motion[i], motion_sig);
         printf("predict: [%f, %f]\n", mu, sig);
-    
+    }
     
     return 0;
 }
