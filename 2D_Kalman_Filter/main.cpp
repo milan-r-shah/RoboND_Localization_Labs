@@ -1,8 +1,10 @@
 #include <iostream>
 #include <math.h>
 #include <tuple>
-#include "Core" // Eigen Library
-#include "LU"   // Eigen Library
+// #include "Core" // Eigen Library
+// #include "LU"   // Eigen Library
+#include "eigen3/Eigen/Core"    // Eigen Library
+#include "eigen3/Eigen/LU"      // Eigen Library
 
 using namespace std;
 using namespace Eigen;
