@@ -227,7 +227,8 @@ void visualization(int n, Robot robot, int step, Robot p[], Robot pr[])
 //####   DON'T MODIFY ANYTHING ABOVE HERE! ENTER CODE BELOW ####
 int main()
 {
-    // TODO: Print "I am ready for coding the MCL!"
+    // Print "I am ready for coding the MCL!"
+    std::cout << "I am ready for coding the MCL!\n";
 
     return 0;
 }
