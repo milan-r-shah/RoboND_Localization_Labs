@@ -230,18 +230,18 @@ int main()
     // Instantiating a robot object from the Robot class
     Robot myrobot;
 
-    // Setting robot new position to x=10.0, y=10.0 and orientation=0
-    // Filling in the position and orientation values in myrobot.set() function
+    // Set robot new position to x=10.0, y=10.0 and orientation=0
+    // Fill in the position and orientation values in myrobot.set() function
     myrobot.set(10.0, 10.0, 0);
 
     // Printing out the new robot position and orientation
     cout << myrobot.show_pose() << endl;
 
-    // Rotating the robot by PI/2.0 and then move him forward by 10.0
+    // Rotate the robot by PI/2.0 and then move him forward by 10.0
     // Use M_PI for the pi value
-    myrobot.move(M_PI_2, 10.0);
+    myrobot.move(M_PI / 2.0, 10.0);
 
-    // Printing out the new robot position and orientation
+    // Print out the new robot position and orientation
     cout << myrobot.show_pose() << endl;
 
     // Printing the distance from the robot toward the eight landmarks
