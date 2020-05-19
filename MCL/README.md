@@ -5,13 +5,17 @@
 
 <!-- [![IMAGE ALT TEXT](https://img.youtube.com/vi/Z7tgQBESh7A/0.jpg)](https://youtu.be/Z7tgQBESh7A  "MCL Steps") -->
 
-[![IMAGE ALT TEXT](./docs/images/MCL_Steps_YT.png)](https://youtu.be/Z7tgQBESh7A  "MCL Steps")
+
+<!-- [![IMAGE ALT TEXT](./docs/images/MCL_Steps_YT.png)](https://youtu.be/Z7tgQBESh7A  "MCL Steps") -->
+
 
 <!-- [<img src="./docs/images/MCL_Steps_YT.png" width="500">] (https://youtu.be/Z7tgQBESh7A  "MCL Steps") -->
 
 <!-- <img src="./docs/images/MCL_Steps_YT.png" href="https://youtu.be/Z7tgQBESh7A" width="500"> -->
 
 <!-- <a href="https://youtu.be/Z7tgQBESh7A" rel="some text">![Foo](./docs/images/MCL_Steps_YT.png )</a> -->
+
+<a href="https://youtu.be/Z7tgQBESh7A" title="MCL Steps"><img src="./docs/images/MCL_Steps_YT.png" width="500"></a>
 
 <br />
 <!-- <br /> -->
@@ -30,7 +34,7 @@
 - Graphing: plot the position of the robot and the particles at each iteration of the MCL algorithm -->
 
 <br />
-<br />
+<!-- <br /> -->
 
 | Steps | Description |
 | --- | --- |
