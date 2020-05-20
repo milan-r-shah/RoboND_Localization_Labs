@@ -224,14 +224,13 @@ void visualization(int n, Robot robot, int step, Robot p[], Robot pr[])
 }
 */
 
-
+//####   DON'T MODIFY ANYTHING ABOVE HERE! ENTER CODE BELOW ####
 int main()
 {
     Robot myrobot;
     // Simulate Noise
     // Forward Noise=5.0, Turn Noise=0.1,Sense Noise=5.0
     myrobot.set_noise(5.0, 0.1, 5.0);
-    
     myrobot.set(30.0, 50.0, M_PI / 2.0);
     myrobot.move(-M_PI / 2.0, 15.0);
     cout << myrobot.read_sensors() << endl;
