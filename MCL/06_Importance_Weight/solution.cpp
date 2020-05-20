@@ -261,16 +261,13 @@ int main()
 
     //####   DON'T MODIFY ANYTHING ABOVE HERE! ENTER CODE BELOW ####
 
-    //TODO: Generate particle weights depending on robot's measurement
-    //TODO: Print particle weights, each on a single line
+    //Generate particle weights depending on robot's measurement
+    //Print particle weights, each on a single line
     double w[n];
-
-    for(int i = 0; i < n; ++i) {
+    for (int i = 0; i < n; i++) {
         w[i] = p[i].measurement_prob(z);
         cout << w[i] << endl;
     }
- 
- 
 
     return 0;
 }
