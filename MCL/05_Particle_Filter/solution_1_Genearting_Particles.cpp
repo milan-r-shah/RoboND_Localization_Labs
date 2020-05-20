@@ -236,21 +236,17 @@ int main()
     //cout << myrobot.read_sensors() << endl;
 
     //####   DON'T MODIFY ANYTHING ABOVE HERE! ENTER CODE BELOW ####
-
+    
     // Instantiating 1000 Particles each with a random position and orientation
     int n = 1000;
-    Robot p[n];
-    //TODO: Your job is to loop over the set of particles
-    //TODO: For each particle add noise: Forward_Noise=0.05, Turn_Noise=0.05, and Sense_Noise=5.0
-    //TODO: And print its pose on a single line
-
-    for(int i = 0; i < n; ++i) {
+    Robot p[n]; 
+    //Your job is to loop over the set of particles
+    //For each particle add noise: Forward_Noise=0.05, Turn_Noise=0.05, and Sense_Noise=5.0
+    //And print its pose on a single line
+    for (int i = 0; i < n; i++) {
         p[i].set_noise(0.05, 0.05, 5.0);
         cout << p[i].show_pose() << endl;
     }
-    
-    
-    
-    
+
     return 0;
 }
