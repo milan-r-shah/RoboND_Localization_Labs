@@ -247,14 +247,12 @@ int main()
     //####   DON'T MODIFY ANYTHING ABOVE HERE! ENTER CODE BELOW ####
 
     //Now, simulate motion for each particle
-    //TODO: Create a new particle set 'p2'
-    //TODO: Rotate each particle by 0.1 and move it forward by 5.0
-    //TODO: Assign 'p2' to 'p' and print the particle poses, each on a single line
-
+    //Create a new particle set 'p2'
+    //Rotate each particle by 0.1 and move it forward by 5.0
+    //Assign p2 to p and print the particle poses, each on a single line
     Robot p2[n];
-
-    for(int i = 0; i < n; ++i) {
-        p2[i].move(0.1, 5.0);
+    for (int i = 0; i < n; i++) {
+        p2[i] = p[i].move(0.1, 5.0);
         p[i] = p2[i];
         cout << p[i].show_pose() << endl;
     }
