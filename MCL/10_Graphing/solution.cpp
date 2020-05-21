@@ -295,7 +295,7 @@ int main()
 
         //####   DON'T MODIFY ANYTHING ABOVE HERE! ENTER CODE BELOW ####
 
-        //TODO: Graph the position of the robot and the particles at each step
+        //Graph the position of the robot and the particles at each step
         visualization(n, myrobot, t, p2, p3);
 
     } //End of Steps loop
