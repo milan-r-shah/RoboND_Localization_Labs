@@ -246,7 +246,7 @@ int main()
 
     //Re-initialize myrobot object and Initialize a measurment vector
     myrobot = Robot();
-    vector<double> z;
+     vector<double> z;
 
     //Iterating 50 times over the set of particles
     int steps = 50;
@@ -292,7 +292,7 @@ int main()
 
         //####   DON'T MODIFY ANYTHING ABOVE HERE! ENTER CODE BELOW ####
         
-        // TODO: Evaluate the error by priting it in this form:
+        //Evaluate the error by priting it in this form:
         // cout << "Step = " << t << ", Evaluation = " << ErrorValue << endl;
         cout << "Step = " << t << ", Evaluation = " << evaluation(myrobot, p, n) << endl;
 
